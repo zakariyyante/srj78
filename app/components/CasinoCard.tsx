@@ -86,6 +86,9 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
               onClick={(event) => {
                 event.stopPropagation();
                 handleCasinoClick();
+                if (typeof (window as any).gtag_report_conversion === 'function') {
+                  (window as any).gtag_report_conversion(casino.url);
+                }
               }}
               className="flex w-full items-center justify-center rounded-2xl border border-amber-500 bg-[linear-gradient(180deg,#f59e0b_0%,#d97706_100%)] px-4 py-3 text-center text-[17px] font-black text-white shadow-[0_10px_24px_rgba(245,158,11,0.3)] transition-transform duration-200 hover:scale-[1.01] sm:text-[19px]"
             >

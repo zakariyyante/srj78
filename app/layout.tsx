@@ -30,6 +30,24 @@ export default function RootLayout({
             gtag('config', 'AW-18125330729');
           `}
         </Script>
+        <Script id="gtag-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18125330729/XbQgCNqJyqUcEKmy6sJD',
+                'value': 1.0,
+                'currency': 'USD',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         {children}
