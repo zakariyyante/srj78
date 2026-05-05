@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Portal de Casinos Online Regulamentados em Portugal 2026",
@@ -16,39 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18125330729"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18125330729');
-          `}
-        </Script>
-        <Script id="gtag-conversion" strategy="afterInteractive">
-          {`
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                'send_to': 'AW-18125330729/XbQgCNqJyqUcEKmy6sJD',
-                'value': 1.0,
-                'currency': 'USD',
-                'event_callback': callback
-              });
-              return false;
-            }
-          `}
-        </Script>
-      </head>
+      <head />
       <body className="antialiased">
         {children}
         <Analytics />
