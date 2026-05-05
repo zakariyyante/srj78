@@ -1,6 +1,5 @@
 'use client';
 
-import { useMemo } from 'react';
 import { Casino } from '../data/casinos';
 import CasinoCard from './CasinoCard';
 import Header from './Header';
@@ -15,13 +14,8 @@ interface MobileCasinoModalProps {
 export default function MobileCasinoModal({ mobileCasinos, isOnline, gclidValue = '' }: MobileCasinoModalProps) {
   const isOpen = isOnline && mobileCasinos.length > 0;
 
-  const updatedCasinos = useMemo(() => {
-    if (!gclidValue) return mobileCasinos;
-    return mobileCasinos.map(casino => ({
-      ...casino,
-      url: casino.url + `&gclid=${gclidValue}`
-    }));
-  }, [mobileCasinos, gclidValue]);
+  // URLs already have gclid injected server-side (via page.tsx → withGclid).
+  const updatedCasinos = mobileCasinos;
 
   if (!isOpen) return null;
 

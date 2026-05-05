@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { casinos } from './data/casinos';
 import { headers } from 'next/headers';
 import MobileCasinoModal from "@/app/components/MobileCasinoModal";
+import { withGclid } from './lib/affiliateTracking';
 
 type PageProps = {
   searchParams?: Record<string, string | string[] | undefined>;
@@ -30,8 +31,12 @@ export default async function Home({ searchParams }: PageProps) {
 
 
   const isOnline = hasGclid;
-  const regularCasinos = casinos.filter(casino => !casino.isMobile);
-  const mobileCasinos = casinos.filter(casino => casino.isMobile === true);
+  const regularCasinos = casinos
+    .filter(casino => !casino.isMobile)
+    .map(casino => ({ ...casino, url: withGclid(casino.url, gclid) }));
+  const mobileCasinos = casinos
+    .filter(casino => casino.isMobile === true)
+    .map(casino => ({ ...casino, url: withGclid(casino.url, gclid) }));
 
   return (
     <div className="min-h-screen bg-transparent">
