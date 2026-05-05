@@ -13,10 +13,18 @@ interface CasinoCardProps {
 }
 
 export default function CasinoCard({ casino, rank, badge, isOnline = false }: CasinoCardProps) {
+  const brandEventKey = casino.name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+
   const handleCasinoClick = () => {
-    if (casino.isMobile) {
-      track('Casino Click', { casino: casino.name });
-    }
+    track(`brand_click_${brandEventKey}`, {
+      brand: casino.name,
+      isMobileBrand: !!casino.isMobile,
+      href: casino.url,
+    });
   };
 
   const renderLogo = () => {
