@@ -43,11 +43,21 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
   };
 
   return (
-    <article className="mx-auto w-full max-w-lg rounded-3xl border border-white/[0.08] bg-[#111b30] p-4 text-white shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:border-amber-500/15 hover:shadow-[0_24px_70px_rgba(0,0,0,0.6)] sm:p-5">
+    <article className="relative mx-auto w-full max-w-lg rounded-3xl border border-white/[0.08] bg-[#111b30] p-4 text-white shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:border-amber-500/15 hover:shadow-[0_24px_70px_rgba(0,0,0,0.6)] cursor-pointer sm:p-5">
+
+      {/* Invisible full-card link — sits behind everything */}
+      <a
+        href={casino.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={handleCasinoClick}
+        className="absolute inset-0 z-0 rounded-3xl"
+        aria-label={`Explorar oferta ${casino.name}`}
+      />
 
       {/* Top badge */}
       {casino.badge && (
-        <div className="mb-3">
+        <div className="relative z-10 mb-3">
           <span className="inline-flex rounded-full bg-amber-500/12 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-400">
             {casino.badge}
           </span>
@@ -55,7 +65,7 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
       )}
 
       {/* Main layout: left (logo + rating) | right (bonus + button) */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch">
+      <div className="relative z-10 flex flex-col gap-4 sm:flex-row sm:items-stretch">
 
         {/* LEFT: logo then rating */}
         <div className="flex w-full flex-row items-center justify-between gap-3 sm:w-44 sm:shrink-0 sm:flex-col sm:items-center sm:justify-between">
@@ -91,11 +101,8 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
               href={casino.url}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(event) => {
-                event.stopPropagation();
-                handleCasinoClick();
-              }}
-              className="flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-500 bg-[linear-gradient(180deg,#f59e0b_0%,#d97706_100%)] px-4 py-3 text-center text-[17px] font-black text-white shadow-[0_10px_24px_rgba(245,158,11,0.3)] transition-transform duration-200 hover:scale-[1.01] sm:text-[19px]"
+              onClick={(e) => { e.stopPropagation(); handleCasinoClick(); }}
+              className="relative z-10 flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-500 bg-[linear-gradient(180deg,#f59e0b_0%,#d97706_100%)] px-4 py-3 text-center text-[17px] font-black text-white shadow-[0_10px_24px_rgba(245,158,11,0.3)] transition-transform duration-200 hover:scale-[1.01] sm:text-[19px]"
             >
               <span className="whitespace-nowrap">Explorar oferta</span>
               <span className="text-[0.9em] leading-none">→</span>
