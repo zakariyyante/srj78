@@ -49,6 +49,15 @@ body::before {
   opacity: 0.25;
 }
 
+/* Ensure Next's dev portal never affects layout/clicks */
+nextjs-portal {
+  display: block;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
 a, button {
   transition:
     color 180ms ease,
