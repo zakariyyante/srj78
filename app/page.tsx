@@ -47,29 +47,29 @@ export default async function Home({ searchParams }: PageProps) {
       {/* Hero */}
       <section className="container mx-auto px-4 pb-4 pt-6 text-center sm:pb-6 sm:pt-8">
         <div className="mx-auto max-w-3xl">
-          <div className="mb-3 inline-flex rounded-full border border-amber-500/25 bg-amber-500/8 px-3 py-1.5 shadow-sm">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-xs">
-              Entretenimento Responsável
+          <div className="mb-3 inline-flex rounded-full border border-violet-500/30 bg-violet-500/[0.09] px-3 py-1.5 shadow-sm">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-violet-300 sm:text-xs">
+              Jogo Consciente e Seguro
             </span>
           </div>
           <h1 className="mb-3 text-2xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
-            A Plataforma Líder de Comparação de Casinos Online Licenciados em Portugal
+            O Guia Definitivo dos Casinos Online Certificados em Portugal
           </h1>
           <p className="mx-auto mb-5 max-w-2xl text-sm leading-relaxed text-white/50 sm:text-base">
-            Guia independente especializado na revisão e comparação de operadores de jogo autorizados pelo SRIJ. Avaliações aprofundadas, detalhes sobre bónus e conteúdos educativos para decisões mais informadas.
+            Portal independente dedicado à análise rigorosa de operadores certificados pelo SRIJ. Revisões detalhadas, informações sobre promoções e conteúdos formativos para que tome decisões mais conscientes e fundamentadas.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-2">
-            <div className="flex items-center gap-1.5 rounded-full border border-amber-500/15 bg-white/[0.04] px-3 py-1.5">
-              <span className="text-sm text-amber-400">🛡️</span>
-              <span className="text-xs font-semibold text-white/70">Licenciado pelo SRIJ</span>
+            <div className="flex items-center gap-1.5 rounded-full border border-violet-500/20 bg-violet-500/[0.06] px-3 py-1.5">
+              <span className="text-sm">🛡️</span>
+              <span className="text-xs font-semibold text-white/70">Certificado pelo SRIJ</span>
             </div>
-            <div className="flex items-center gap-1.5 rounded-full border border-violet-500/15 bg-white/[0.04] px-3 py-1.5">
-              <span className="text-sm text-violet-400">⭐</span>
-              <span className="text-xs font-semibold text-white/70">Avaliações Independentes</span>
+            <div className="flex items-center gap-1.5 rounded-full border border-amber-500/20 bg-amber-500/[0.06] px-3 py-1.5">
+              <span className="text-sm">⭐</span>
+              <span className="text-xs font-semibold text-white/70">Análises Imparciais</span>
             </div>
-            <div className="flex items-center gap-1.5 rounded-full border border-amber-500/15 bg-white/[0.04] px-3 py-1.5">
-              <span className="text-sm text-amber-400">🔒</span>
-              <span className="text-xs font-semibold text-white/70">Segurança Garantida</span>
+            <div className="flex items-center gap-1.5 rounded-full border border-violet-500/20 bg-violet-500/[0.06] px-3 py-1.5">
+              <span className="text-sm">🔒</span>
+              <span className="text-xs font-semibold text-white/70">Proteção Assegurada</span>
             </div>
           </div>
         </div>
@@ -92,65 +92,65 @@ export default async function Home({ searchParams }: PageProps) {
         <div className="mx-auto mt-5 max-w-lg">
           <div className="mb-3 text-center">
             <h2 className="mb-1 text-lg font-extrabold tracking-wide text-amber-400 sm:text-xl">
-              Casino em Destaque com Licença Válida
+              Operador em Destaque com Licença Ativa
             </h2>
             <p className="text-xs text-white/40 sm:text-sm">
-              Analisamos operadores certificados pelo SRIJ e apresentamos comparações objetivas e bem documentadas.
+              Avaliamos plataformas autorizadas pelo SRIJ e disponibilizamos comparações transparentes e rigorosas.
             </p>
           </div>
 
           <div className="rounded-2xl border border-amber-500/10 bg-white/[0.025] px-4 py-3 text-center">
             <p className="text-xs leading-relaxed text-white/50 sm:text-sm">
-              <strong className="text-white/70">⚠️ Apenas para maiores de 18 anos.</strong> O jogo pode criar dependência. Se precisar de ajuda ligue para a{' '}
-              <strong className="text-amber-400">Linha Vida: 1414</strong>{' '}(gratuita, 24h). Jogue com responsabilidade. Sujeito a T&amp;C.
+              <strong className="text-white/70">⚠️ Exclusivo para maiores de 18 anos.</strong> O jogo pode causar dependência. Em caso de necessidade, contacte a{' '}
+              <strong className="text-amber-400">Linha Vida: 1414</strong>{' '}(gratuita, disponível 24h). Aposte de forma responsável. Sujeito a T&amp;C.
             </p>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="border-y border-white/[0.06] bg-white/[0.018] py-10 sm:py-14 lg:py-18">
+      <section id="sobre" className="border-y border-violet-500/[0.07] bg-violet-500/[0.012] py-10 sm:py-14 lg:py-18">
         <div className="container mx-auto max-w-5xl px-4">
           <h2 className="mb-6 text-center text-xl font-extrabold text-white sm:mb-8 sm:text-2xl lg:mb-10 lg:text-3xl">
-            Conheça o Nosso Serviço de Comparação
+            O Que Fazemos e Como Trabalhamos
           </h2>
 
           <div className="mb-6 rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:mb-8 sm:p-7 lg:p-8">
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              Criámos este portal para tornar mais simples a pesquisa e avaliação de casinos online acessíveis a jogadores em Portugal. Num mercado em rápido crescimento com dezenas de operadores licenciados, é essencial analisar com rigor aspetos como promoções, variedade de jogos e processos de registo antes de escolher uma plataforma.
+              Desenvolvemos este portal com o objetivo de simplificar a pesquisa de casinos online para jogadores em Portugal. Num setor em expansão acelerada com múltiplos operadores autorizados, é fundamental avaliar criteriosamente aspectos como promoções, catálogo de jogos e facilidade de registo antes de optar por uma plataforma.
             </p>
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              Reunimos informações detalhadas e imparciais sobre bónus, funcionalidades e condições de cada operador, para que os visitantes possam tomar decisões esclarecidas e fundamentadas.
+              Compilamos informação completa e neutra sobre bónus, funcionalidades e condições de cada operador, para que os utilizadores possam tomar decisões informadas e seguras.
             </p>
             <p className="text-sm leading-relaxed text-white/55 sm:text-base">
-              Não disponibilizamos jogos nem operamos como casa de jogo. A nossa missão foca-se inteiramente em análises, comparações e conteúdos educativos.
+              Não operamos nem disponibilizamos jogos de azar. A nossa atividade centra-se exclusivamente em análises comparativas e conteúdos informativos.
             </p>
           </div>
 
           {/* Licensed Casinos */}
           <div className="mb-6 rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:mb-8 sm:p-7 lg:p-8">
             <h3 className="mb-4 text-lg font-bold text-white sm:text-xl">
-              Operadores com Licença do SRIJ
+              Plataformas Autorizadas pelo SRIJ
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              Todos os casinos listados neste portal possuem uma licença ativa emitida pelo Serviço de Regulação e Inspeção de Jogos (SRIJ), o organismo oficial responsável pela supervisão do jogo online em Portugal. Esta certificação garante conformidade regulamentar, proteção dos jogadores e transparência nas operações.
+              Todos os operadores apresentados neste portal dispõem de uma licença válida emitida pelo Serviço de Regulação e Inspeção de Jogos (SRIJ), a entidade pública responsável pela fiscalização do jogo online em Portugal. Esta homologação assegura conformidade legal, salvaguarda dos utilizadores e transparência operacional.
             </p>
             <ul className="space-y-2 text-sm text-white/55 sm:text-base">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Historial e credibilidade comprovada do operador</span>
+                <span>Reputação e historial sólido do operador</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Diversidade e qualidade do catálogo de jogos</span>
+                <span>Amplitude e qualidade da oferta de jogos</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Eficácia e rapidez do apoio ao cliente</span>
+                <span>Prontidão e eficiência do serviço de apoio</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Adoção de boas práticas de jogo responsável</span>
+                <span>Compromisso com práticas de jogo responsável</span>
               </li>
             </ul>
           </div>
@@ -158,53 +158,53 @@ export default async function Home({ searchParams }: PageProps) {
           {/* Bonuses */}
           <div className="mb-6 rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:mb-8 sm:p-7 lg:p-8">
             <h3 className="mb-4 text-lg font-bold text-white sm:text-xl">
-              Promoções e Campanhas de Bónus
+              Bónus e Ofertas Promocionais
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              Os operadores licenciados em Portugal disponibilizam regularmente ações promocionais, incluindo bónus de boas-vindas, giros gratuitos e ofertas especiais. Organizamos esta informação e destacamos os pontos fundamentais, nomeadamente:
+              Os operadores autorizados em Portugal lançam periodicamente campanhas promocionais, que incluem bónus de boas-vindas, rodadas gratuitas e promoções especiais. Organizamos e sintetizamos essa informação, realçando os aspetos mais relevantes:
             </p>
             <ul className="space-y-2 text-sm text-white/55 sm:text-base">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-violet-400">•</span>
-                <span>Condições de apostas associadas ao bónus</span>
+                <span>Requisitos de rollover aplicáveis ao bónus</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-violet-400">•</span>
-                <span>Valor mínimo de depósito exigido</span>
+                <span>Montante mínimo de depósito necessário</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-violet-400">•</span>
-                <span>Período de validade da oferta promocional</span>
+                <span>Prazo de utilização da oferta promocional</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-violet-400">•</span>
-                <span>Regras específicas de cada campanha</span>
+                <span>Condicionantes específicas de cada promoção</span>
               </li>
             </ul>
             <p className="mt-4 text-xs italic text-white/35 sm:text-sm">
-              Recomendamos a leitura integral dos termos e condições na página oficial do operador antes de aceitar qualquer promoção.
+              Aconselhamos a consulta integral dos termos e condições no site oficial do operador antes de ativar qualquer oferta.
             </p>
           </div>
 
           {/* Payments */}
           <div className="mb-6 rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:mb-8 sm:p-7 lg:p-8">
             <h3 className="mb-4 text-lg font-bold text-white sm:text-xl">
-              Pagamentos e Segurança de Dados
+              Métodos de Pagamento e Proteção de Dados
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              A proteção das transações é um fator determinante na seleção de um casino online. Os operadores com licença recorrem a tecnologia de encriptação avançada para assegurar a segurança dos dados pessoais e das operações financeiras.
+              A segurança das transações é um critério essencial na escolha de um casino online. Os operadores licenciados utilizam sistemas de encriptação de elevado nível para garantir a integridade dos dados pessoais e a proteção de todas as operações financeiras.
             </p>
             <p className="mb-3 text-sm leading-relaxed text-white/55 sm:text-base">
-              Os métodos de pagamento mais frequentes incluem:
+              As opções de pagamento habitualmente disponíveis incluem:
             </p>
             <ul className="space-y-2 text-sm text-white/55 sm:text-base">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">•</span>
-                <span>Cartões de crédito e débito (Visa, Mastercard)</span>
+                <span>Cartões bancários de crédito e débito (Visa, Mastercard)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">•</span>
-                <span>Carteiras eletrónicas (PayPal, Skrill, Neteller)</span>
+                <span>Carteiras digitais (PayPal, Skrill, Neteller)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">•</span>
@@ -214,78 +214,78 @@ export default async function Home({ searchParams }: PageProps) {
           </div>
 
           {/* Responsible Gambling */}
-          <div id="responsabilidade" className="mb-6 rounded-2xl border border-amber-500/15 bg-[linear-gradient(135deg,rgba(12,14,26,0.98),rgba(20,12,8,0.98))] p-5 shadow-lg sm:mb-8 sm:p-7 lg:p-8">
-            <h3 className="mb-4 text-lg font-bold text-amber-400 sm:text-xl">
-              Dedicação ao Jogo Responsável
+          <div id="responsabilidade" className="mb-6 rounded-2xl border border-violet-500/20 bg-[linear-gradient(135deg,rgba(8,6,28,0.98),rgba(12,8,24,0.98))] p-5 shadow-lg sm:mb-8 sm:p-7 lg:p-8">
+            <h3 className="mb-4 text-lg font-bold text-violet-300 sm:text-xl">
+              Compromisso com o Jogo Responsável
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-white/60 sm:text-base">
-              As plataformas supervisionadas pelo SRIJ disponibilizam ferramentas criadas para assegurar uma experiência de jogo equilibrada e consciente, incluindo:
+              Os operadores regulados pelo SRIJ disponibilizam recursos desenvolvidos para promover uma experiência de jogo saudável e equilibrada, designadamente:
             </p>
             <ul className="space-y-2 text-sm text-white/60 sm:text-base">
               <li className="flex items-start gap-2">
-                <span className="mt-0.5 text-amber-400">•</span>
-                <span>Estabelecimento de limites para depósitos e perdas</span>
+                <span className="mt-0.5 text-violet-400">•</span>
+                <span>Configuração de limites de depósito e de perdas</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5 text-amber-400">•</span>
-                <span>Opção de suspensão temporária da conta</span>
+                <span className="mt-0.5 text-violet-400">•</span>
+                <span>Possibilidade de pausa voluntária da conta</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5 text-amber-400">•</span>
-                <span>Ferramentas de autoexclusão permanente</span>
+                <span className="mt-0.5 text-violet-400">•</span>
+                <span>Mecanismos de autoexclusão definitiva</span>
               </li>
             </ul>
             <p className="mt-4 text-sm leading-relaxed text-white/60 sm:text-base">
-              O jogo deve ser visto exclusivamente como uma forma de lazer. Se tiver dificuldade em controlar os seus hábitos de jogo, procure ajuda junto das organizações de apoio disponíveis em Portugal.
+              O jogo deve ser praticado unicamente como forma de entretenimento. Se sentir dificuldades em gerir o seu comportamento de jogo, contacte as entidades de apoio disponíveis em Portugal.
             </p>
           </div>
 
           {/* Evaluation Criteria */}
           <div className="mb-6 rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:mb-8 sm:p-7 lg:p-8">
             <h3 className="mb-4 text-lg font-bold text-white sm:text-xl">
-              Como Avaliamos os Operadores
+              A Nossa Metodologia de Avaliação
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-white/55 sm:text-base">
-              As nossas classificações baseiam-se em critérios rigorosos e bem definidos:
+              As pontuações atribuídas assentam em parâmetros objetivos e consistentes:
             </p>
             <ul className="space-y-2 text-sm text-white/55 sm:text-base">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Licença ativa e válida emitida pelo SRIJ</span>
+                <span>Licença em vigor, emitida pelo SRIJ</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Amplitude de slots e jogos de mesa disponíveis</span>
+                <span>Variedade de slots, mesas e jogos ao vivo</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Transparência nas regras e condições dos bónus</span>
+                <span>Clareza e equidade nas condições dos bónus</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Competência e disponibilidade do suporte ao cliente</span>
+                <span>Qualidade e disponibilidade do suporte ao utilizador</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Desempenho e usabilidade em dispositivos móveis</span>
+                <span>Experiência e desempenho em plataformas móveis</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-amber-400">✓</span>
-                <span>Avaliações e comentários de utilizadores reais</span>
+                <span>Opiniões verificadas de jogadores reais</span>
               </li>
             </ul>
             <p className="mt-4 text-xs italic text-white/35 sm:text-sm">
-              As posições nos nossos rankings são estritamente editoriais e não comerciais. Qualquer operador que perca a licença ou viole requisitos regulamentares será removido de imediato.
+              As classificações publicadas são inteiramente editoriais, sem qualquer influência comercial. Operadores que percam a autorização ou incumpram requisitos legais são removidos imediatamente.
             </p>
           </div>
 
           {/* Regular Info Update */}
           <div className="rounded-2xl border border-white/[0.07] bg-white/[0.035] p-5 shadow-sm sm:p-7 lg:p-8">
             <h3 className="mb-4 text-lg font-bold text-white sm:text-xl">
-              Conteúdo Continuamente Atualizado
+              Informação Sempre Atualizada
             </h3>
             <p className="text-sm leading-relaxed text-white/55 sm:text-base">
-              O setor do jogo online está em permanente evolução, com novas promoções, condições revistas e jogos recém-lançados. Revemos regularmente as nossas análises e tabelas comparativas para assegurar que a informação disponibilizada reflete sempre os dados mais recentes dos operadores autorizados.
+              O mercado do jogo online evolui constantemente, com promoções renovadas, condições atualizadas e novos títulos em permanente lançamento. Revemos periodicamente as nossas análises e comparativos para garantir que os dados publicados reflitam sempre a realidade mais recente dos operadores autorizados.
             </p>
           </div>
         </div>
@@ -295,10 +295,10 @@ export default async function Home({ searchParams }: PageProps) {
       <section className="py-10 sm:py-14 lg:py-18">
         <div className="container mx-auto max-w-5xl px-4">
           <h2 className="mb-8 text-center text-xl font-extrabold text-white sm:mb-10 sm:text-2xl lg:text-3xl">
-            O Que Dizem os Nossos Visitantes
+            A Opinião dos Nossos Utilizadores
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-center text-sm text-white/40 sm:mb-10 sm:text-base">
-            Experiências de utilizadores que recorreram a este portal para explorar operadores licenciados e compreender melhor condições, promoções e características dos casinos online em Portugal.
+            Testemunhos de pessoas que utilizaram este portal para descobrir operadores certificados e aprofundar o seu conhecimento sobre promoções, condições e funcionalidades dos casinos online em Portugal.
           </p>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -306,7 +306,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">Pedro Almeida</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                Encontrei informação fiável sobre operadores certificados pelo SRIJ. As condições dos bónus estão descritas de forma clara, o que tornou a comparação entre plataformas muito mais prática. Um recurso indispensável para quem valoriza dados de qualidade.
+                Encontrei aqui dados sólidos sobre plataformas homologadas pelo SRIJ. As condições dos bónus são apresentadas de forma direta, facilitando muito a comparação entre operadores. Uma referência essencial para quem procura informação de confiança.
               </p>
             </div>
 
@@ -314,7 +314,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">Mariana Lopes</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                As explicações sobre RTP e volatilidade foram extremamente úteis. Noutros sites estes temas são tratados de forma complexa, mas aqui estão apresentados com uma linguagem simples e direta. Passei a entender muito melhor como funcionam as slots.
+                Os conteúdos sobre RTP e volatilidade foram muito esclarecedores. Noutros portais estes conceitos surgem de forma demasiado técnica, mas aqui tudo é explicado de modo claro e acessível. Hoje compreendo muito melhor o funcionamento das slots.
               </p>
             </div>
 
@@ -322,7 +322,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">Tiago Nunes</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                Como iniciante, tinha muitas dúvidas sobre promoções e as respetivas condições. Este portal apresenta tudo de forma clara e sem exageros. Foi uma ajuda preciosa antes de tomar qualquer decisão.
+                Enquanto principiante, tinha inúmeras questões sobre promoções e os seus requisitos. Este portal expõe tudo com clareza e sem exageros. Foi um apoio valioso antes de avançar com qualquer escolha.
               </p>
             </div>
 
@@ -330,7 +330,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">Catarina Ribeiro</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                Saber que todos os operadores listados têm licença do SRIJ dá-me muita confiança. A secção sobre jogo responsável é igualmente muito completa, com informação sobre limites de depósito e mecanismos de autoexclusão.
+                A certeza de que todos os operadores apresentados possuem licença do SRIJ transmite-me grande tranquilidade. A área dedicada ao jogo responsável é também muito abrangente, abordando limites de depósito e ferramentas de autoexclusão.
               </p>
             </div>
 
@@ -338,7 +338,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">André Mendes</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                Este portal simplifica muito a comparação entre casinos online. As tabelas são bem organizadas e a informação é precisa e objetiva. Sem promessas inflacionadas, apenas dados concretos para uma análise séria.
+                Este portal torna a comparação entre casinos online muito mais simples. A informação está bem estruturada, é precisa e totalmente objetiva. Sem promessas exageradas — apenas dados concretos para uma análise fundamentada.
               </p>
             </div>
 
@@ -346,7 +346,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div className="mb-3 text-sm text-amber-400">★★★★★</div>
               <h4 className="mb-2 text-sm font-bold text-white">Beatriz Correia</h4>
               <p className="text-xs leading-relaxed text-white/45 sm:text-sm">
-                Os conteúdos educativos são um ponto muito forte. Aprendi sobre métodos de pagamento, prazos de levantamento e como interpretar corretamente as regras dos bónus. Um portal que faz realmente a diferença.
+                Os recursos formativos são um ponto de destaque claro. Aprendi sobre meios de pagamento, prazos de levantamento e como interpretar corretamente as regras associadas aos bónus. Um portal que genuinamente acrescenta valor.
               </p>
             </div>
           </div>
@@ -357,10 +357,10 @@ export default async function Home({ searchParams }: PageProps) {
       <section id="cookies" className="border-t border-white/[0.06] bg-white/[0.012] py-8 sm:py-10">
         <div className="container mx-auto max-w-4xl px-4">
           <h3 className="mb-4 text-center text-lg font-bold text-white sm:text-xl">
-            Política de Cookies
+            Utilização de Cookies
           </h3>
           <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-white/45 sm:text-sm">
-            Este portal utiliza cookies para aprimorar a experiência de navegação, analisar padrões de uso e personalizar os conteúdos exibidos. Alguns cookies são indispensáveis para o correto funcionamento do site, enquanto outros contribuem para a melhoria dos nossos serviços e análise de tráfego. Pode ajustar as suas preferências de cookies em qualquer altura.
+            Este portal recorre a cookies para melhorar a experiência de navegação, monitorizar padrões de utilização e adequar os conteúdos apresentados. Certos cookies são necessários para o funcionamento correto do site, enquanto outros auxiliam na melhoria dos serviços e na análise de tráfego. As suas preferências de cookies podem ser alteradas a qualquer momento.
           </p>
         </div>
       </section>
