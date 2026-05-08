@@ -13,6 +13,18 @@ export interface Casino {
 //
 
 export const casinos: Casino[] = [
+  
+  {
+    name: "WildTokyo",
+    logo: "/wildtokyo.svg",
+    rating: 9.7,
+    votes: 9547,
+    bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
+    url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
+    badge: "Pagamentos Instantâneos",
+    isMobile: true
+  },
+  
   {
     name: "WishKing",
     logo: "/WISHKING.svg",
@@ -24,27 +36,17 @@ export const casinos: Casino[] = [
     isMobile: true
   },
   
-  {
-    name: "RollySpin",
-    logo: "/rolly.svg",
-    rating: 9.8,
-    votes: 9547,
-    bonus: "Pacote de boas-vindas 285% até 1000 € + 410 giros grátis",
-    url: "https://rollyspin19.net/dhsr6tn7w?subid=RollySpin-SRJ78&visit_id=",
-    badge: "",
-    isMobile: true
-  },
+  // {
+  //   name: "RollySpin",
+  //   logo: "/rolly.svg",
+  //   rating: 9.8,
+  //   votes: 9547,
+  //   bonus: "Pacote de boas-vindas 285% até 1000 € + 410 giros grátis",
+  //   url: "https://rollyspin19.net/dhsr6tn7w?subid=RollySpin-SRJ78&visit_id=",
+  //   badge: "",
+  //   isMobile: true
+  // },
   
-   {
-    name: "WildTokyo",
-    logo: "/wildtokyo.svg",
-    rating: 9.7,
-    votes: 9547,
-    bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
-    url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
-    badge: "Pagamentos Instantâneos",
-    isMobile: true
-  },
   {
     name: "Golazzo",
     logo: "/golazo.webp",
