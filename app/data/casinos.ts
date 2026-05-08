@@ -14,27 +14,27 @@ export interface Casino {
 
 export const casinos: Casino[] = [
   
-  {
-    name: "WildTokyo",
-    logo: "/wildtokyo.svg",
-    rating: 9.7,
-    votes: 9547,
-    bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
-    url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
-    badge: "Pagamentos Instantâneos",
-    isMobile: true
-  },
+  // {
+  //   name: "WildTokyo",
+  //   logo: "/wildtokyo.svg",
+  //   rating: 9.7,
+  //   votes: 9547,
+  //   bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
+  //   url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
+  //   badge: "Pagamentos Instantâneos",
+  //   isMobile: true
+  // },
   
-  {
-    name: "WishKing",
-    logo: "/WISHKING.svg",
-    rating: 9.9,
-    votes: 9547,
-    bonus: "Bónus de Boas-Vindas Até 6.000€ + 250 GG",
-    url: "https://clickwk.com/tzqyjweyi?subid=WishKing-SRJ78&visit_id=",
-    badge: "Grandes Bónus e Levantamento Instantâneo",
-    isMobile: true
-  },
+  // {
+  //   name: "WishKing",
+  //   logo: "/WISHKING.svg",
+  //   rating: 9.9,
+  //   votes: 9547,
+  //   bonus: "Bónus de Boas-Vindas Até 6.000€ + 250 GG",
+  //   url: "https://clickwk.com/tzqyjweyi?subid=WishKing-SRJ78&visit_id=",
+  //   badge: "Grandes Bónus e Levantamento Instantâneo",
+  //   isMobile: true
+  // },
   
   {
     name: "RollySpin",
