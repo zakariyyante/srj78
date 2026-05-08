@@ -38,7 +38,7 @@ export const casinos: Casino[] = [
    {
     name: "WildTokyo",
     logo: "/wildtokyo.svg",
-    rating: 10,
+    rating: 9.7,
     votes: 9547,
     bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
     url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
@@ -48,7 +48,7 @@ export const casinos: Casino[] = [
   {
     name: "Golazzo",
     logo: "/golazo.webp",
-    rating: 9.8,
+    rating: 9.6,
     votes: 9547,
     bonus: "100% ATÉ 2 000 € + 200 RG + 20 € APOSTA GRÁTIS",
     url: "https://glzz.fynkelto.com/?mid=369335_2131001&subid=Golazzo-SRJ78&clickid=",
@@ -58,7 +58,7 @@ export const casinos: Casino[] = [
   {
     name: "LolaJack",
     logo: "/lolajack.webp",
-    rating: 9.7,
+    rating: 9.5,
     votes: 9547,
     bonus: "400% até 15000€ + 400 GG",
     url: "https://track-otn.com/trk.php?t=2564&c=4408&subid=LolaJack-SRJ78&clickid=",
