@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import PublisherDisclosure from '../components/PublisherDisclosure';
 
 export const metadata = {
   title: "Política de Privacidade - Guia Casinos Portugal",
@@ -21,6 +22,8 @@ export default function PrivacyPolicy() {
             <p className="italic text-white/25">
               Última atualização: {new Date().toLocaleDateString('pt-PT', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
+
+            <PublisherDisclosure />
 
             <section>
               <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl">1. Introdução</h2>

@@ -107,6 +107,18 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Affiliate & Platform Disclosure */}
+        <div className="mb-8 space-y-2 rounded-xl border border-white/[0.05] bg-white/[0.02] px-5 py-4">
+          <p className="text-xs leading-relaxed text-white/40 sm:text-sm">
+            <strong className="font-semibold text-white/55">Divulgação de afiliação:</strong>{' '}
+            Podemos receber uma comissão quando utilizadores se registam através de links disponíveis neste website.
+          </p>
+          <p className="text-xs leading-relaxed text-white/40 sm:text-sm">
+            <strong className="font-semibold text-white/55">Sem serviço de plataforma:</strong>{' '}
+            Não disponibilizamos serviços de plataforma de jogo. Todos os serviços são prestados por operadores terceiros devidamente licenciados.
+          </p>
+        </div>
+
         {/* Institutional Partners */}
         <div className="mb-8 flex flex-wrap items-center justify-center gap-3">
           <a

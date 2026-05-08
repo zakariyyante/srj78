@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import PublisherDisclosure from '../components/PublisherDisclosure';
 
 export const metadata = {
   title: "Termos de Utilização - Guia Casinos Portugal",
@@ -21,6 +22,8 @@ export default function TermsOfService() {
             <p className="italic text-white/25">
               Última atualização: {new Date().toLocaleDateString('pt-PT', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
+
+            <PublisherDisclosure />
 
             <section>
               <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl">1. Aceitação dos Termos</h2>
@@ -146,17 +149,20 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl">10. Divulgação de Afiliação</h2>
+              <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl">10. Divulgação de Afiliação e Responsável pela Publicação</h2>
               <p>
-                O Guia Casinos Portugal pode receber compensação de operadores de casino quando os utilizadores
-                clicam em ligações ou se registam através do nosso Serviço. Esta compensação ajuda-nos a manter
-                e melhorar o Serviço.
+                CasinosRápido.org pode receber compensação de operadores de casino quando os utilizadores
+                clicam em ligações ou efetuam registo através deste Serviço. Esta compensação contribui para
+                a manutenção e melhoria contínua da plataforma.
               </p>
               <p className="mt-3">
-                As nossas análises e classificações baseiam-se na nossa avaliação independente e não são
-                influenciadas por relações de afiliação. Estamos empenhados em fornecer informação honesta,
-                precisa e imparcial.
+                As análises e classificações publicadas assentam numa avaliação editorial independente e não
+                são condicionadas por quaisquer relações comerciais ou de afiliação. O compromisso com
+                informação rigorosa, transparente e imparcial é um princípio inegociável deste portal.
               </p>
+              <div className="mt-4">
+                <PublisherDisclosure />
+              </div>
             </section>
 
             <section>

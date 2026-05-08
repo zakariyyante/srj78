@@ -1,6 +1,7 @@
 import CasinoCard from './components/CasinoCard';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PublisherDisclosure from './components/PublisherDisclosure';
 import { casinos } from './data/casinos';
 import { headers } from 'next/headers';
 import MobileCasinoModal from "@/app/components/MobileCasinoModal";
@@ -288,6 +289,8 @@ export default async function Home({ searchParams }: PageProps) {
               O mercado do jogo online evolui constantemente, com promoções renovadas, condições atualizadas e novos títulos em permanente lançamento. Revemos periodicamente as nossas análises e comparativos para garantir que os dados publicados reflitam sempre a realidade mais recente dos operadores autorizados.
             </p>
           </div>
+
+          <PublisherDisclosure />
         </div>
       </section>
 
@@ -363,6 +366,11 @@ export default async function Home({ searchParams }: PageProps) {
             Este portal recorre a cookies para melhorar a experiência de navegação, monitorizar padrões de utilização e adequar os conteúdos apresentados. Certos cookies são necessários para o funcionamento correto do site, enquanto outros auxiliam na melhoria dos serviços e na análise de tráfego. As suas preferências de cookies podem ser alteradas a qualquer momento.
           </p>
         </div>
+      </section>
+
+      {/* Publisher disclosure */}
+      <section className="container mx-auto px-4 pb-8">
+        <PublisherDisclosure />
       </section>
 
       <Footer />
