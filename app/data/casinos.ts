@@ -46,12 +46,12 @@ export const casinos: Casino[] = [
     isMobile: true
   },
   {
-    name: "BlitzBet",
-    logo: "/blitzbet.svg",
+    name: "Golazzo",
+    logo: "/golazo.webp",
     rating: 9.8,
     votes: 9547,
-    bonus: "BÓNUS DE BOAS-VINDAS 100% até 500€ + 100 FS",
-    url: "https://blitztraff.com/gwnooyprn?subid=BlitzBet-SRJ78&visit_id=",
+    bonus: "100% ATÉ 2 000 € + 200 RG + 20 € APOSTA GRÁTIS",
+    url: "https://glzz.fynkelto.com/?mid=369335_2131001&subid=Golazzo-SRJ78&clickid=",
     badge: "",
     isMobile: true
   },
