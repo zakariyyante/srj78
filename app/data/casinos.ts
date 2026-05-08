@@ -36,16 +36,16 @@ export const casinos: Casino[] = [
     isMobile: true
   },
   
-  // {
-  //   name: "RollySpin",
-  //   logo: "/rolly.svg",
-  //   rating: 9.8,
-  //   votes: 9547,
-  //   bonus: "Pacote de boas-vindas 285% até 1000 € + 410 giros grátis",
-  //   url: "https://rollyspin19.net/dhsr6tn7w?subid=RollySpin-SRJ78&visit_id=",
-  //   badge: "",
-  //   isMobile: true
-  // },
+  {
+    name: "RollySpin",
+    logo: "/rolly.svg",
+    rating: 9.8,
+    votes: 9547,
+    bonus: "Pacote de boas-vindas 285% até 1000 € + 410 giros grátis",
+    url: "https://rollyspin19.net/dhsr6tn7w?subid=RollySpin-SRJ78&visit_id=",
+    badge: "",
+    isMobile: true
+  },
   
   {
     name: "Golazzo",
