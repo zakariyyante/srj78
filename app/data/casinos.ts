@@ -14,28 +14,57 @@ export interface Casino {
 
 export const casinos: Casino[] = [
   {
+    name: "SpinBoss",
+    logo: "/spinbosslogo.webp",
+    rating: 10,
+    votes: 9547,
+    bonus: "400% ATÉ 15.000€ + 400 GG",
+    url: "https://spbs.lynmonkel.com/?mid=355610_2142901&subid=SpinBoss-SRJ78&clickid=",
+    badge: "Grandes Bónus e Levantamento Instantâneo",
+    isMobile: true
+  },
+  {
+    name: "Westace",
+    logo: "/logo-WestAce.png",
+    rating: 9.9,
+    votes: 9547,
+    bonus: "400% até 15000€ + 400 GG",
+    url: "https://wstc.lynmonkel.com/?mid=355610_2142902&subid=Westace-SRJ78&clickid=",
+    badge: "Pagamentos Instantâneos",
+    isMobile: true
+  },
+  {
     name: "WishKing",
     logo: "/WISHKING.svg",
-    rating: 9.9,
+    rating: 9.8,
     votes: 9547,
     bonus: "Bónus de Boas-Vindas Até 6.000€ + 250 GG",
     url: "https://clickwk.com/tzqyjweyi?subid=WishKing-SRJ78&visit_id=",
-    badge: "Grandes Bónus e Levantamento Instantâneo",
+    badge:"",
     isMobile: true
   },
 
   {
     name: "WildTokyo",
     logo: "/wildtokyo.svg",
-    rating: 9.8,
+    rating: 9.7,
     votes: 9547,
     bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
     url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
-    badge: "Pagamentos Instantâneos",
+    badge:"",
     isMobile: true
   },
   
-  
+  {
+    name: "Bananzia",
+    logo: "/bananzia.svg",
+    rating: 9.6,
+    votes: 9547,
+    bonus: "120% Até 500 € + 30FS",
+    url: "https://go.drctvoodoo.com/click?pid=6&offer_id=16&sub2=Bananzia-SRJ78&sub1=",
+    badge:"",
+    isMobile: true
+  },
   
   // {
   //   name: "RollySpin",
@@ -48,16 +77,16 @@ export const casinos: Casino[] = [
   //   isMobile: true
   // },
   
-  {
-    name: "Golazzo",
-    logo: "/golazo.webp",
-    rating: 9.6,
-    votes: 9547,
-    bonus: "100% ATÉ 2 000 € + 200 RG + 20 € APOSTA GRÁTIS",
-    url: "https://glzz.fynkelto.com/?mid=369335_2131001&subid=Golazzo-SRJ78&clickid=",
-    badge: "",
-    isMobile: true
-  },
+  // {
+  //   name: "Golazzo",
+  //   logo: "/golazo.webp",
+  //   rating: 9.6,
+  //   votes: 9547,
+  //   bonus: "100% ATÉ 2 000 € + 200 RG + 20 € APOSTA GRÁTIS",
+  //   url: "https://glzz.fynkelto.com/?mid=369335_2131001&subid=Golazzo-SRJ78&clickid=",
+  //   badge: "",
+  //   isMobile: true
+  // },
   // {
   //   name: "LolaJack",
   //   logo: "/lolajack.webp",
