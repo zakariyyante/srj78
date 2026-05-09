@@ -57,26 +57,26 @@ export const casinos: Casino[] = [
     badge: "",
     isMobile: true
   },
-  {
-    name: "LolaJack",
-    logo: "/lolajack.webp",
-    rating: 9.5,
-    votes: 9547,
-    bonus: "400% até 15000€ + 400 GG",
-    url: "https://track-otn.com/trk.php?t=2564&c=4408&subid=LolaJack-SRJ78&clickid=",
-    badge: "",
-    isMobile: true
-  },
-  {
-    name: "BetNjet",
-    logo: "/BETNEJT.svg",
-    rating: 9.2,
-    votes: 9547,
-    bonus: "RECEBA O BÓNUS DE BOAS-VINDAS 400% ATÉ €1000 + 250 GG",
-    url: "https://gtrfk.com/jhtktbtvz?subid=BetNJet-SRJ78&visit_id=",
-    badge: "",
-    isMobile: true
-  },
+  // {
+  //   name: "LolaJack",
+  //   logo: "/lolajack.webp",
+  //   rating: 9.5,
+  //   votes: 9547,
+  //   bonus: "400% até 15000€ + 400 GG",
+  //   url: "https://track-otn.com/trk.php?t=2564&c=4408&subid=LolaJack-SRJ78&clickid=",
+  //   badge: "",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "BetNjet",
+  //   logo: "/BETNEJT.svg",
+  //   rating: 9.2,
+  //   votes: 9547,
+  //   bonus: "RECEBA O BÓNUS DE BOAS-VINDAS 400% ATÉ €1000 + 250 GG",
+  //   url: "https://gtrfk.com/jhtktbtvz?subid=BetNJet-SRJ78&visit_id=",
+  //   badge: "",
+  //   isMobile: true
+  // },
   // {
   //   name: "SlotRave",
   //   logo: "/SLOTRAVE.png",
