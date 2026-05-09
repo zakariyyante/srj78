@@ -17,7 +17,7 @@ export const casinos: Casino[] = [
   {
     name: "WildTokyo",
     logo: "/wildtokyo.svg",
-    rating: 9.7,
+    rating: 10,
     votes: 9547,
     bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
     url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
@@ -70,7 +70,7 @@ export const casinos: Casino[] = [
   {
     name: "BetNjet",
     logo: "/BETNEJT.svg",
-    rating: 9.8,
+    rating: 9.2,
     votes: 9547,
     bonus: "RECEBA O BÓNUS DE BOAS-VINDAS 400% ATÉ €1000 + 250 GG",
     url: "https://gtrfk.com/jhtktbtvz?subid=BetNJet-SRJ78&visit_id=",
