@@ -54,23 +54,35 @@ export default async function Home({ searchParams }: PageProps) {
             </span>
           </div>
           <h1 className="mb-3 text-2xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
-            O Guia Definitivo dos Casinos Online Certificados em Portugal
+            Compare Casinos Online Legais em Portugal
           </h1>
-          <p className="mx-auto mb-5 max-w-2xl text-sm leading-relaxed text-white/50 sm:text-base">
-            Portal independente dedicado à análise rigorosa de operadores certificados pelo SRIJ. Revisões detalhadas, informações sobre promoções e conteúdos formativos para que tome decisões mais conscientes e fundamentadas.
+          <p className="mx-auto mb-6 max-w-2xl text-sm leading-relaxed text-white/50 sm:text-base">
+            Veja plataformas licenciadas com slots, casino ao vivo, bónus claros e métodos de pagamento seguros. Compare antes de jogar e escolha uma opção regulada em Portugal.
           </p>
+
+          {/* Primary CTA */}
+          <div className="mb-6">
+            <a
+              href="#casinos"
+              className="inline-flex items-center gap-2 rounded-xl border border-amber-500/80 bg-gradient-to-b from-amber-400 to-amber-600 px-7 py-3.5 text-[15px] font-black text-white shadow-[0_8px_24px_rgba(245,158,11,0.30)] transition-all hover:scale-[1.03] hover:shadow-[0_12px_30px_rgba(245,158,11,0.40)] sm:text-base"
+            >
+              Comparar Casinos
+              <span className="opacity-80">→</span>
+            </a>
+          </div>
+
           <div className="flex flex-wrap items-center justify-center gap-2">
             <div className="flex items-center gap-1.5 rounded-full border border-violet-500/20 bg-violet-500/[0.06] px-3 py-1.5">
               <span className="text-sm">🛡️</span>
-              <span className="text-xs font-semibold text-white/70">Certificado pelo SRIJ</span>
+              <span className="text-xs font-semibold text-white/70">Licenciado em Portugal</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-full border border-amber-500/20 bg-amber-500/[0.06] px-3 py-1.5">
-              <span className="text-sm">⭐</span>
-              <span className="text-xs font-semibold text-white/70">Análises Imparciais</span>
+              <span className="text-sm">💳</span>
+              <span className="text-xs font-semibold text-white/70">Pagamentos Seguros</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-full border border-violet-500/20 bg-violet-500/[0.06] px-3 py-1.5">
               <span className="text-sm">🔒</span>
-              <span className="text-xs font-semibold text-white/70">Proteção Assegurada</span>
+              <span className="text-xs font-semibold text-white/70">Jogo Responsável</span>
             </div>
           </div>
         </div>

@@ -1,24 +1,24 @@
 export default function Logo() {
   return (
-    <div className="flex items-center gap-3">
-      <LogoIcon size={46} />
-      {/* Wordmark */}
+    <div className="flex items-center gap-2.5">
+      <LogoIcon size={40} />
       <div className="leading-none">
-        <div className="flex items-baseline gap-[1px]">
-          <span className="text-[18px] font-black tracking-tight text-white">Casinos</span>
-          <span className="bg-gradient-to-r from-violet-400 to-amber-400 bg-clip-text text-[18px] font-black tracking-tight text-transparent">
+        <div className="flex items-baseline">
+          <span className="text-[17px] font-black tracking-tight text-white">Casinos</span>
+          <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-amber-400 bg-clip-text text-[17px] font-black tracking-tight text-transparent">
             Rápido
           </span>
+          <span className="ml-[2px] text-[10px] font-semibold text-violet-400/35">.org</span>
         </div>
-        <span className="block text-[9px] font-bold uppercase tracking-[0.35em] text-violet-400/40">
-          .org
+        <span className="block text-[8px] font-semibold uppercase tracking-[0.3em] text-white/20">
+          Portugal · Licenciado SRIJ
         </span>
       </div>
     </div>
   );
 }
 
-export function LogoIcon({ size = 46 }: { size?: number }) {
+export function LogoIcon({ size = 40 }: { size?: number }) {
   return (
     <svg
       width={size}
@@ -29,163 +29,58 @@ export function LogoIcon({ size = 46 }: { size?: number }) {
       aria-hidden="true"
     >
       <defs>
-        {/* Outer ring gradient: violet → gold */}
-        <linearGradient id="ringGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+        {/* Rounded-square fill */}
+        <linearGradient id="sqBg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#3b0764" />
+          <stop offset="100%" stopColor="#0f0529" />
+        </linearGradient>
+        {/* Border gradient */}
+        <linearGradient id="sqBorder" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#a855f7" />
-          <stop offset="45%" stopColor="#7c3aed" />
+          <stop offset="60%" stopColor="#7c3aed" />
           <stop offset="100%" stopColor="#f59e0b" />
         </linearGradient>
-        {/* Crown gradient: gold */}
-        <linearGradient id="crownGrad" x1="14" y1="13" x2="34" y2="33" gradientUnits="userSpaceOnUse">
+        {/* Crown fill */}
+        <linearGradient id="crownFill" x1="12" y1="12" x2="36" y2="34" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#fde68a" />
-          <stop offset="55%" stopColor="#f59e0b" />
-          <stop offset="100%" stopColor="#b45309" />
+          <stop offset="100%" stopColor="#f59e0b" />
         </linearGradient>
-        {/* Background gradient */}
-        <radialGradient id="bgGrad" cx="45%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="#130d2e" />
-          <stop offset="100%" stopColor="#060412" />
-        </radialGradient>
-        {/* Inner ring glow gradient */}
-        <linearGradient id="innerRingGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#c084fc" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.3" />
+        {/* Top gloss */}
+        <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
         </linearGradient>
-        {/* Glow filter */}
-        <filter id="lg" x="-40%" y="-40%" width="180%" height="180%">
-          <feGaussianBlur stdDeviation="1.4" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-        {/* Gem glow */}
-        <filter id="gemGlow" x="-80%" y="-80%" width="260%" height="260%">
-          <feGaussianBlur stdDeviation="0.7" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
+        {/* Clip for gloss */}
+        <clipPath id="sqClip">
+          <rect x="1.5" y="1.5" width="45" height="45" rx="12.5" />
+        </clipPath>
       </defs>
 
-      {/* ── Background disc ── */}
-      <circle cx="24" cy="24" r="23.5" fill="url(#bgGrad)" />
+      {/* ── Background rounded square ── */}
+      <rect x="1.5" y="1.5" width="45" height="45" rx="12.5" fill="url(#sqBg)" />
 
-      {/* ── Outer gradient ring ── */}
-      <circle cx="24" cy="24" r="22.5" fill="none" stroke="url(#ringGrad)" strokeWidth="1.6" />
+      {/* ── Border ── */}
+      <rect x="1.5" y="1.5" width="45" height="45" rx="12.5" fill="none" stroke="url(#sqBorder)" strokeWidth="1.4" />
 
-      {/* ── 12 gem studs on outer ring ── */}
-      {Array.from({ length: 12 }).map((_, i) => {
-        const angle = (i * 30 - 90) * (Math.PI / 180);
-        const r = 22.5;
-        const cx = 24 + r * Math.cos(angle);
-        const cy = 24 + r * Math.sin(angle);
-        const isGold = i % 3 === 0;
-        return (
-          <circle
-            key={i}
-            cx={cx}
-            cy={cy}
-            r={isGold ? 1.5 : 1.1}
-            fill={isGold ? '#f59e0b' : '#8b5cf6'}
-            filter="url(#gemGlow)"
-          />
-        );
-      })}
+      {/* ── Top gloss sheen ── */}
+      <rect x="1.5" y="1.5" width="45" height="20" rx="12.5" fill="url(#gloss)" clipPath="url(#sqClip)" />
 
-      {/* ── Second inner ring ── */}
-      <circle cx="24" cy="24" r="18.5" fill="none" stroke="url(#innerRingGrad)" strokeWidth="0.6" />
+      {/* ── Clean geometric crown ── */}
+      {/* Crown body — flat 3-peak silhouette */}
+      <path
+        d="M13 32 L13 21.5 L18.5 26.5 L24 14.5 L29.5 26.5 L35 21.5 L35 32 Z"
+        fill="url(#crownFill)"
+      />
+      {/* Crown base bar */}
+      <rect x="12" y="31" width="24" height="4" rx="2" fill="url(#crownFill)" />
 
-      {/* ── Sunburst rays (very subtle) ── */}
-      <g opacity="0.09">
-        {Array.from({ length: 8 }).map((_, i) => {
-          const angle = (i * 45) * (Math.PI / 180);
-          return (
-            <line
-              key={i}
-              x1={24}
-              y1={24}
-              x2={24 + 18 * Math.cos(angle)}
-              y2={24 + 18 * Math.sin(angle)}
-              stroke="#f59e0b"
-              strokeWidth="0.9"
-            />
-          );
-        })}
-      </g>
+      {/* ── Three peak dots ── */}
+      <circle cx="13" cy="21.5" r="2.2" fill="#fde68a" />
+      <circle cx="24" cy="14.5" r="2.5" fill="#ffffff" opacity="0.95" />
+      <circle cx="35" cy="21.5" r="2.2" fill="#fde68a" />
 
-      {/* ── Laurel arcs on left and right ── */}
-      <g opacity="0.55" filter="url(#lg)">
-        {/* Left laurel arc */}
-        <path
-          d="M10 30 Q7 24 10 18"
-          fill="none"
-          stroke="#a855f7"
-          strokeWidth="1.1"
-          strokeLinecap="round"
-        />
-        <path
-          d="M11.5 28.5 Q9.5 24 11.5 19.5"
-          fill="none"
-          stroke="#c084fc"
-          strokeWidth="0.6"
-          strokeLinecap="round"
-          opacity="0.5"
-        />
-        {/* Right laurel arc */}
-        <path
-          d="M38 18 Q41 24 38 30"
-          fill="none"
-          stroke="#f59e0b"
-          strokeWidth="1.1"
-          strokeLinecap="round"
-        />
-        <path
-          d="M36.5 19.5 Q38.5 24 36.5 28.5"
-          fill="none"
-          stroke="#fbbf24"
-          strokeWidth="0.6"
-          strokeLinecap="round"
-          opacity="0.5"
-        />
-      </g>
-
-      {/* ── Crown ── */}
-      <g filter="url(#lg)">
-        {/* Crown body */}
-        <path
-          d="M14 30 L14 20.5 L18.5 25 L24 13.5 L29.5 25 L34 20.5 L34 30 Z"
-          fill="url(#crownGrad)"
-        />
-        {/* Crown base bar */}
-        <rect x="13" y="29.5" width="22" height="3.8" rx="1.9" fill="url(#crownGrad)" />
-
-        {/* Crown peak jewels */}
-        <circle cx="14" cy="20.5" r="2.1" fill="#c084fc" filter="url(#gemGlow)" />
-        <circle cx="24" cy="13.5" r="2.4" fill="#e879f9" filter="url(#gemGlow)" />
-        <circle cx="34" cy="20.5" r="2.1" fill="#c084fc" filter="url(#gemGlow)" />
-
-        {/* Crown mid jewels on the "steps" */}
-        <circle cx="18.5" cy="25" r="1.3" fill="#fde68a" opacity="0.9" />
-        <circle cx="29.5" cy="25" r="1.3" fill="#fde68a" opacity="0.9" />
-
-        {/* Crown base center diamond gem */}
-        <path
-          d="M24 28 L25.5 30 L24 32 L22.5 30 Z"
-          fill="#f59e0b"
-          filter="url(#gemGlow)"
-        />
-      </g>
-
-      {/* ── 4-pointed sparkle top-left ── */}
-      <g opacity="0.7" filter="url(#gemGlow)">
-        <path d="M9.5 10 L10 11.8 L11.8 12.3 L10 12.8 L9.5 14.6 L9 12.8 L7.2 12.3 L9 11.8 Z" fill="#c084fc" />
-      </g>
-      {/* ── 4-pointed sparkle top-right ── */}
-      <g opacity="0.7" filter="url(#gemGlow)">
-        <path d="M38.5 10 L39 11.8 L40.8 12.3 L39 12.8 L38.5 14.6 L38 12.8 L36.2 12.3 L38 11.8 Z" fill="#fbbf24" />
-      </g>
+      {/* ── Small center-base diamond ── */}
+      <path d="M24 29.5 L25.4 31.5 L24 33.5 L22.6 31.5 Z" fill="#ffffff" opacity="0.7" />
     </svg>
   );
 }

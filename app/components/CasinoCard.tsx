@@ -95,7 +95,7 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
         rel="noopener noreferrer"
         onClick={handleCasinoClick}
         className="absolute inset-0 z-0 rounded-2xl"
-        aria-label={`Explorar oferta ${casino.name}`}
+        aria-label={`Ver oferta ${casino.name}`}
       />
 
       {/* Subtle ambient glow in background */}
@@ -129,18 +129,18 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
         <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch">
 
           {/* LEFT: logo + rating */}
-          <div className="flex w-full flex-row items-center gap-3 sm:w-40 sm:shrink-0 sm:flex-col sm:items-center sm:gap-3">
+          <div className="flex w-full flex-row items-center gap-2.5 sm:w-44 sm:shrink-0 sm:flex-col sm:items-center sm:gap-2.5">
 
-            {/* Logo container */}
-            <div className="flex h-16 w-36 shrink-0 items-center justify-center rounded-xl border border-white/[0.06] bg-white/[0.03] p-2 sm:h-20 sm:w-full">
-              <div className="flex h-full w-full items-center justify-center [&>img]:h-full [&>img]:max-h-14 [&>img]:w-full [&>img]:object-contain [&>svg]:h-full [&>svg]:w-full">
+            {/* Logo container — maximise available area, minimal padding */}
+            <div className="flex h-[76px] w-[44%] shrink-0 items-center justify-center rounded-xl border border-white/[0.06] bg-white/[0.03] p-1.5 sm:h-[88px] sm:w-full">
+              <div className="flex h-full w-full items-center justify-center [&>img]:h-full [&>img]:w-full [&>img]:object-contain [&>svg]:h-full [&>svg]:w-full">
                 {renderLogo()}
               </div>
             </div>
 
-            {/* Rating box */}
-            <div className="flex min-w-[100px] flex-col items-center rounded-xl border border-white/[0.06] bg-white/[0.03] px-3 py-2.5 sm:w-full">
-              <div className="text-[28px] font-black leading-none tracking-tight text-white sm:text-[32px]">
+            {/* Rating box — compact */}
+            <div className="flex flex-1 flex-col items-center rounded-xl border border-white/[0.06] bg-white/[0.03] px-2 py-2 sm:w-full sm:flex-none">
+              <div className="text-[26px] font-black leading-none tracking-tight text-white sm:text-[30px]">
                 {casino.rating.toFixed(1)}
               </div>
               <div className="mt-1 flex gap-[2px]">
@@ -153,8 +153,8 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
                   </span>
                 ))}
               </div>
-              <div className="mt-1 text-[9px] font-medium text-white/30">
-                {casino.votes.toLocaleString('pt-PT')} avaliações
+              <div className="mt-0.5 text-[9px] font-medium text-white/30">
+                {casino.votes.toLocaleString('pt-PT')} aval.
               </div>
             </div>
           </div>
@@ -186,9 +186,23 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
               >
                 {/* Shimmer overlay */}
                 <span className="pointer-events-none absolute inset-0 -skew-x-12 translate-x-[-120%] bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 hover:translate-x-[120%]" />
-                <span className="whitespace-nowrap">Explorar Oferta</span>
+                <span className="whitespace-nowrap">Ver Oferta</span>
                 <span className="text-[1em] leading-none opacity-80">→</span>
               </a>
+
+              {/* Trust badges */}
+              <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
+                <span className="flex items-center gap-1 rounded-full border border-white/[0.07] bg-white/[0.03] px-2.5 py-1 text-[9px] font-semibold text-white/35">
+                  🛡️ Licenciado em Portugal
+                </span>
+                <span className="flex items-center gap-1 rounded-full border border-white/[0.07] bg-white/[0.03] px-2.5 py-1 text-[9px] font-semibold text-white/35">
+                  💳 Pagamentos Seguros
+                </span>
+                <span className="flex items-center gap-1 rounded-full border border-white/[0.07] bg-white/[0.03] px-2.5 py-1 text-[9px] font-semibold text-white/35">
+                  🔒 Jogo Responsável
+                </span>
+              </div>
+
               <p className="mt-2 text-center text-[10px] text-white/25">
                 Sujeito a T&amp;C · 18+ · Aposte com moderação
               </p>

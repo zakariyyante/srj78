@@ -22,15 +22,15 @@ export default function MobileCasinoModal({ mobileCasinos, isOnline, gclidValue 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-[#0b1121]/95 backdrop-blur-md">
       <div className="min-h-screen w-full bg-transparent">
-        {!isOnline && <Header />}
+        <Header />
 
         <div className="border-b border-emerald-500/10 bg-black/20 px-4 py-3 backdrop-blur sm:px-6">
           <div className="container mx-auto">
             <h1 className="mb-1 text-lg font-extrabold text-white sm:text-xl lg:text-2xl">
-              Melhores Casinos Online 2026
+              Compare Casinos Online Legais em Portugal
             </h1>
             <h2 className="text-left font-extrabold text-emerald-400 sm:text-xl">
-              Descubra as principais plataformas de casino e apostas com levantamentos céleres e ofertas de registo.
+              Veja plataformas licenciadas com slots, casino ao vivo, bónus claros e métodos de pagamento seguros.
             </h2>
           </div>
         </div>
