@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Portal de Casinos Online Regulamentados em Portugal 2026",
@@ -29,6 +30,20 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
         <Analytics />
+
+        {/* Google Ads tag — loads after page is interactive, non-blocking */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18095510991"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18095510991');
+          `}
+        </Script>
       </body>
     </html>
   );

@@ -55,6 +55,13 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
       isMobileBrand: !!casino.isMobile,
       href: casino.url,
     });
+
+    // Google Ads conversion
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18095510991/dN83CKv-36UcEM-rzrRD',
+      });
+    }
   };
 
   const cfg = rank === 1 ? rankConfig[1] : rank === 2 ? rankConfig[2] : rankConfig.default;
