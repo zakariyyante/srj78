@@ -13,36 +13,36 @@ export interface Casino {
 //
 
 export const casinos: Casino[] = [
-  {
-    name: "WildTokyo",
-    logo: "/wildtokyo.svg",
-    rating: 9.7,
-    votes: 9547,
-    bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
-    url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
-    badge:"",
-    isMobile: true
-  },
-  {
-    name: "WishKing",
-    logo: "/WISHKING.svg",
-    rating: 9.8,
-    votes: 9547,
-    bonus: "Bónus de Boas-Vindas Até 6.000€ + 250 GG",
-    url: "https://clickwk.com/tzqyjweyi?subid=WishKing-SRJ78&visit_id=",
-    badge:"",
-    isMobile: true
-  },
-  {
-    name: "SpinBoss",
-    logo: "/spinbosslogo.webp",
-    rating: 10,
-    votes: 9547,
-    bonus: "400% ATÉ 15.000€ + 400 GG",
-    url: "https://spbs.lynmonkel.com/?mid=355610_2142901&subid=SpinBoss-SRJ78&clickid=",
-    badge: "Grandes Bónus e Levantamento Instantâneo",
-    isMobile: true
-  },
+  // {
+  //   name: "WildTokyo",
+  //   logo: "/wildtokyo.svg",
+  //   rating: 9.7,
+  //   votes: 9547,
+  //   bonus: "PACOTE DE BOAS-VINDAS OLÍMPICO 260% até 3000€ + 620 Rodadas Grátis",
+  //   url: "https://gowildtokyo.com/duutjrifn?subid=WildTokyo-SRJ78&clickid=",
+  //   badge:"",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "WishKing",
+  //   logo: "/WISHKING.svg",
+  //   rating: 9.8,
+  //   votes: 9547,
+  //   bonus: "Bónus de Boas-Vindas Até 6.000€ + 250 GG",
+  //   url: "https://clickwk.com/tzqyjweyi?subid=WishKing-SRJ78&visit_id=",
+  //   badge:"",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "SpinBoss",
+  //   logo: "/spinbosslogo.webp",
+  //   rating: 10,
+  //   votes: 9547,
+  //   bonus: "400% ATÉ 15.000€ + 400 GG",
+  //   url: "https://spbs.lynmonkel.com/?mid=355610_2142901&subid=SpinBoss-SRJ78&clickid=",
+  //   badge: "Grandes Bónus e Levantamento Instantâneo",
+  //   isMobile: true
+  // },
   // {
   //   name: "Westace",
   //   logo: "/logo-WestAce.png",
